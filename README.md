@@ -1,5 +1,6 @@
 # Image_denoising_zero_dce_net
 PSNR: 28.07
+
 Spatial Consistency Loss: By ensuring consistency of the spatial feature maps produced over consecutive training epochs, maintaining per-class running-average heatmaps for each training image. We show that this spatial consistency loss further improves the enhanced image through preserving the difference of neighboring regions between the input image and its enhanced version.
 ![image](https://github.com/krishagrwl/Image_Denoising_Zero_DCE_NET/assets/172372978/d67ff76b-9d35-4c2d-845b-31a23ea14320)
 Color Constancy Loss: This function aims to ensure that the enhanced image maintains a consistent color balance. This function calculates the loss based on the mean color values of the red, green, and blue channels of the image, penalizing deviations from an ideal color balance. Then the function calculates the squared differences between the mean value of each pair of channels. Function returns square root of sum of differences of each pair of means.
